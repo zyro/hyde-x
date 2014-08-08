@@ -1,0 +1,17 @@
+name = "Hyde-X"
+license = "MIT"
+source_repo = "https://github.com/zyro/hyde-x"
+description = "An elegant open source and mobile first theme, extended with new integrations and layout improvements"
+tags = ["blog", "personal"]
+features = ["blog", "personal"]
+
+[author]
+    name = "Andrei Mihu"
+    email = "hello@andreimihu.com"
+    url = "http://andreimihu.com"
+
+# If Porting existing theme
+[original]
+    author =  "poole"
+    url = "http://hyde.getpoole.com"
+    repo = "https://github.com/poole/hyde"

@@ -1,0 +1,9 @@
+/*
+ * Tweaks and overrides to hyde.css
+ */
+
+.sidebar-nav {
+  padding-left: 0;
+  list-style: none;
+  margin-bottom: 1rem;
+}
