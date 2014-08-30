@@ -5,6 +5,16 @@ Enhanced port of the Jekyll "[Hyde](https://github.com/poole/hyde)" theme to the
 
 You can find a live site using this theme [here](http://andreimihu.com) and the corresponding source code [here](https://github.com/zyro/andreimihu.com).
 
+Jump to:
+* [Installation](#installation)
+* [Usage](#usage)
+* [Configuration](#configuration)
+* [Tips](#tips)
+* [Changes and enhancements from the original theme](#changes-and-enhancements-from-the-original-theme)
+* [Attribution](#attribution)
+* [Questions, ideas, bugs, pull requests?](#questions-ideas-bugs-pull-requests)
+* [License](#license)
+
 ### Installation
 
 ```
@@ -105,7 +115,7 @@ MetaDataFormat = "toml"
 
 ### Attribution
 
-Obviously largely a port of this awesome [Hyde](https://github.com/poole/hyde) theme.
+Obviously largely a port of the awesome [Hyde](https://github.com/poole/hyde) theme.
 
 ### Questions, ideas, bugs, pull requests?
 
