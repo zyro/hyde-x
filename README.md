@@ -5,7 +5,6 @@ Enhanced port of the Jekyll "[Hyde](https://github.com/poole/hyde)" theme to the
 
 You can find a live site using this theme [here](http://andreimihu.com) and the corresponding source code [here](https://github.com/zyro/andreimihu.com).
 
-Jump to:
 * [Installation](#installation)
 * [Usage](#usage)
 * [Configuration](#configuration)
