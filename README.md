@@ -118,7 +118,7 @@ Obviously largely a port of the awesome [Hyde](https://github.com/poole/hyde) th
 
 ### Questions, ideas, bugs, pull requests?
 
-All feedback is welcome! Head over to the [issue tracker](https://github.com/zyro/hyde-x).
+All feedback is welcome! Head over to the [issue tracker](https://github.com/zyro/hyde-x/issues).
 
 ### License
 
