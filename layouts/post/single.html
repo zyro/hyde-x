@@ -1,4 +1,4 @@
-{{ template "theme/partials/head.html" . }}
+{{ partial "head.html" . }}
 <div class="content container">
   <div class="post">
     <h1>{{ .Title }}</h1>
@@ -32,4 +32,4 @@ var disqus_shortname = {{ . }};
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 {{ end }}
-{{ template "theme/partials/foot.html" . }}
+{{ partial "foot.html" . }}
