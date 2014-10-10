@@ -30,4 +30,4 @@
   {{ with .Site.Params.googleAuthorship }}<link rel="author" href="http://plus.google.com/{{ . }}">{{ end }}
 </head>
 <body{{ with .Site.Params.theme }} class="{{ . }}"{{ end }}>
-{{ template "theme/partials/sidebar.html" . }}
+{{ partial "sidebar.html" . }}
