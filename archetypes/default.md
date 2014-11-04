@@ -1,6 +1,6 @@
 +++
-Description = ""
-Keywords = []
-Tags = []
-Categories = []
+title = ""
+description = ""
+keywords = []
+categories = []
 +++

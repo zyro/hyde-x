@@ -6,6 +6,10 @@
   list-style: none;
 }
 
+.posts li {
+  margin: 0 0 .5em 0;
+}
+
 .sidebar-about img {
   margin: 0 auto 0.5rem auto;
   width: 150px;
@@ -24,4 +28,80 @@
     width: 200px;
     height: 200px;
   }
+}
+
+/* From bootstrap.css 3.3.0 - start */
+.label {
+  display: inline;
+  padding: .2em .6em .3em;
+  font-size: 75%;
+  font-weight: bold;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25em;
+}
+a.label:hover,
+a.label:focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.label:empty {
+  display: none;
+}
+/* From bootstrap.css 3.3.0 - end */
+
+.label {
+  margin: 0 .25em;
+  background-color: #313131;
+}
+
+.posts a.label,
+.post-date a.label {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Red */
+.theme-base-08 .label {
+  background-color: #ac4142;
+}
+
+/* Orange */
+.theme-base-09 .label {
+  background-color: #d28445;
+}
+
+/* Yellow */
+.theme-base-0a .label {
+  background-color: #f4bf75;
+}
+
+/* Green */
+.theme-base-0b .label {
+  background-color: #90a959;
+}
+
+/* Cyan */
+.theme-base-0c .label {
+  background-color: #75b5aa;
+}
+
+/* Blue */
+.theme-base-0d .label {
+  background-color: #6a9fb5;
+}
+
+/* Magenta */
+.theme-base-0e .label {
+  background-color: #aa759f;
+}
+
+/* Brown */
+.theme-base-0f .label {
+  background-color: #8f5536;
 }

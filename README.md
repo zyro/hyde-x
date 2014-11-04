@@ -8,6 +8,7 @@ You can find a live site using this theme [here](http://andreimihu.com) and the 
 * [Installation](#installation)
 * [Usage](#usage)
 * [Configuration](#configuration)
+* [Built-in colour themes](#built-in-colour-themes)
 * [Tips](#tips)
 * [Changes and enhancements from the original theme](#changes-and-enhancements-from-the-original-theme)
 * [Attribution](#attribution)
@@ -56,8 +57,12 @@ MetaDataFormat = "toml"
 
 [permalinks]
     # Optional. Change the permalink format for the 'post' content type.
-    # The format shown here is the same one Jekyll/Octopress uses.
+    # The format shown here is the same one Jekyll/Octopress uses by default.
     post = "/blog/:year/:month/:day/:title/"
+
+[indexes]
+    # Optional. Use if you want tags and lists.
+    category = "categories"
 
 #
 # All parameters below here are optional and can be mixed and matched.
@@ -68,7 +73,7 @@ MetaDataFormat = "toml"
     defaultKeywords = "your,default,page,keywords"
 
     # Changes sidebar background and link/accent colours.
-    # See the original Hyde theme for more colour options.
+    # See below for more colour options.
     # This also works: "theme-base-08 layout-reverse", or just "layout-reverse".
 	theme = "theme-base-08"
 
@@ -93,6 +98,12 @@ MetaDataFormat = "toml"
     twitter = ""
 ```
 
+### Built-in colour themes
+
+Hyde-X provides 8 built-in colour themes by default, with the option to define more in your own custom CSS.
+
+![Hyde-X theme classes](https://github.com/zyro/hyde-x/images/theme-colours.png)
+
 ### Tips
 
 * Pages where you specify `menu = "main"` in the front matter will be linked in the sidebar just below the `Blog` link.
@@ -103,6 +114,7 @@ MetaDataFormat = "toml"
 
 ### Changes and enhancements from the original theme
 
+* Category labels and lists.
 * Client-side syntax highlighting through [highlight.js](https://highlightjs.org/), sane fallback if disabled or no JS.
 * Disqus integration: comment counts listed under blog entry names in post list, comments displayed at the bottom of each post.
 * Gravatar image in sidebar.
