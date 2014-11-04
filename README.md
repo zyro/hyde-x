@@ -102,7 +102,7 @@ MetaDataFormat = "toml"
 
 Hyde-X provides 8 built-in colour themes by default, with the option to define more in your own custom CSS.
 
-![Hyde-X theme classes](https://github.com/zyro/hyde-x/images/theme-colours.png)
+![Hyde-X theme classes](https://github.com/zyro/hyde-x/blob/master/images/theme-colours.png)
 
 ### Tips
 
