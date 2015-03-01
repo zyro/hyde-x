@@ -51,6 +51,8 @@ title = "Your site title"
 languageCode = "en-us"
 disqusShortname = "your_disqus_shortname" # Optional, enable Disqus integration
 MetaDataFormat = "toml"
+theme = "hyde-x"
+paginate = 10
 
 [author]
     name = "Your Name"

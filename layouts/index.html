@@ -1,7 +1,8 @@
 {{ partial "head.html" . }}
 <div class="content container">
   <div class="posts">
-    {{ range .Data.Pages }}{{ if eq .Section "post" }}
+    {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
+    {{ range $paginator.Pages }}
     <div class="post">
       <h1 class="post-title">
         <a href="{{ .Permalink }}">{{ .Title }}</a>
@@ -15,7 +16,8 @@
       <p>{{ .Description }}</p>
       <a href="{{ .Permalink }}">Read On &rarr;</a>
     </div>
-    {{ end }}{{ end }}
+    {{ end }}
+    {{ template "_internal/pagination.html" . }}
   </div>
 </div>
 
