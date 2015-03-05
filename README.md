@@ -84,6 +84,7 @@ paginate = 10
     highlight = "sunburst"
 
     # Displays under the author name in the sidebar, keep it short.
+    # You can use markdown here.
 	tagline = "Your favourite quote or soundbite."
 
     # Metadata used to drive integrations.
