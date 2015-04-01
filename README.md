@@ -1,7 +1,7 @@
 Hyde-X
 ======
 
-Enhanced port of the Jekyll "[Hyde](https://github.com/poole/hyde)" theme to the Hugo site generator. Check below for a list of enhancements.
+Enhanced port of the Jekyll "[Hyde](https://github.com/poole/hyde)" theme to the [Hugo](http://gohugo.io) site generator. Check below for a list of enhancements.
 
 You can find a live site using this theme [here](http://andreimihu.com) and the corresponding source code [here](https://github.com/zyro/andreimihu.com).
 
@@ -24,7 +24,7 @@ $ cd themes
 $ git clone https://github.com/zyro/hyde-x
 ```
 
-See the [official Hugo themes documentation](http://hugo.spf13.com/themes/installing) for more info.
+See the [official Hugo themes documentation](http://gohugo.io/themes/installing) for more info.
 
 ### Usage
 
@@ -92,8 +92,7 @@ paginate = 10
     googleAnalytics = "Your Google Analytics tracking code"
     gravatarHash = "MD5 hash of your Gravatar email address"
 
-    # Sidebar social links, avoid enabling too many of these if possible.
-    # These should be full URLs.
+    # Sidebar social links, these must be full URLs.
     github = ""
     linkedin = ""
     googleplus = ""
@@ -109,22 +108,26 @@ Hyde-X provides 8 built-in colour themes by default, with the option to define m
 
 ### Tips
 
+* If you've added `theme = "hyde-x"` to your `config.toml`, you don't need to keep using the `--theme=hyde-x` flag!
 * Pages where you specify `menu = "main"` in the front matter will be linked in the sidebar just below the `Blog` link.
 * Use the exact permalink format above to maintain old links if migrating from Jekyll/Octopress.
 * Although all of the syntax highlight CSS files under the theme's `static/css/highlight` are bundled with the site, only the one you choose will be included in the page and delivered to the browser.
 * Change the favicon by providing your own as `static/favicon.png` in your site directory.
-* Hugo makes it easy to override theme layout and behaviour, read about it [here](http://hugo.spf13.com/themes/customizing).
+* Hugo makes it easy to override theme layout and behaviour, read about it [here](http://gohugo.io/themes/customizing).
+* Pagination is set to 10 items by default, change it by updating `paginate = 10` in your `config.toml`.
 
 ### Changes and enhancements from the original theme
 
 * Category labels and lists.
-* Client-side syntax highlighting through [highlight.js](https://highlightjs.org/), sane fallback if disabled or no JS.
+* Client-side syntax highlighting through [highlight.js](https://highlightjs.org/), sane fallback if disabled or no JS - infinitely more flexible than the standard Hugo highlighting.
 * Disqus integration: comment counts listed under blog entry names in post list, comments displayed at the bottom of each post.
 * Gravatar image in sidebar.
 * Google Analytics integration.
 * Google Authorship metadata.
 * Sidebar link layout and footer format changes.
 * Blog post list now contains only the post description, not the full contents.
+* Paginated blog listing.
+* [FontAwesome](http://fortawesome.github.io/Font-Awesome) social links.
 * ...many other small layout tweaks!
 
 ### Attribution
