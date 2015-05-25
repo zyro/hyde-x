@@ -5,7 +5,7 @@
     <li><a href="{{ .Permalink }}">{{ .Title }}</a>
     {{ if isset .Params "categories" }}
     &middot;
-    {{ $baseUrl := .Site.BaseUrl }}
+    {{ $baseUrl := .Site.BaseURL }}
     {{ range .Params.categories }}<a class="label" href="{{ $baseUrl }}/categories/{{ . | urlize }}">{{ . }}</a>{{ end }}
     {{ end }}</span>
     &middot; <time>{{ .Date.Format "Jan 2, 2006" }}</time></li>
