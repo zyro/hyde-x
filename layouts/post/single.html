@@ -6,7 +6,7 @@
     {{ if isset .Params "categories" }}
     <br/>
     {{ $baseUrl := .Site.BaseUrl }}
-    {{ range .Params.categories }}<a class="label" href="{{ $baseUrl }}/categories/{{ . | urlize }}">{{ . }}</a>{{ end }}
+    {{ range .Params.categories }}<a class="label" href="{{ $baseUrl }}/categories/{{ . | urlize }}"> {{ . }}</a>{{ end }}
     {{ end }}</span>
     {{ .Content }}
   </div>
