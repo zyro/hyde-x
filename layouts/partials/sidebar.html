@@ -1,7 +1,7 @@
 <div class="sidebar">
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
-      {{ with .Site.Params.gravatarHash }}<img src="http://www.gravatar.com/avatar/{{ . }}?s=200" alt="gravatar">{{ end }}
+      {{ with .Site.Params.gravatarHash }}<img src="https://www.gravatar.com/avatar/{{ . }}?s=200" alt="gravatar">{{ end }}
       <h1>{{ .Site.Author.name }}</h1>
       {{ with .Site.Params.tagline }}<p class="lead">{{ . | markdownify }}</p>{{ end }}
     </div>
