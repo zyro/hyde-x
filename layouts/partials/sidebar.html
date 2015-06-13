@@ -7,9 +7,9 @@
     </div>
 
     <ul class="sidebar-nav">
-      <li class="sidebar-nav-item"><a href="{{ .Site.BaseUrl }}/">Blog</a></li>
+      <li class="sidebar-nav-item"><a href="{{ .Site.BaseURL }}/">Blog</a></li>
       {{ range .Site.Menus.main }}
-      <li class="sidebar-nav-item"><a href="{{ .Url }}">{{ .Name }}</a></li>
+      <li class="sidebar-nav-item"><a href="{{ .URL }}">{{ .Name }}</a></li>
       {{end}}
     </ul>
 
@@ -24,7 +24,7 @@
       </li>
     </ul>
 
-    <p>Copyright &copy; {{ .Now.Format "2006" }} <a href="{{ .Site.BaseUrl }}/license">License</a><br/>
+    <p>Copyright &copy; {{ .Now.Format "2006" }} <a href="{{ .Site.BaseURL }}/license">License</a><br/>
        Powered by <a href="http://gohugo.io">Hugo</a> and <a href="https://github.com/zyro/hyde-x">Hyde-X</a></p>
   </div>
 </div>
