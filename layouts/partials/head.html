@@ -10,18 +10,18 @@
   <title>{{ .Title }} &middot; {{ .Site.Author.name }}</title>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/poole.css">
-  <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/hyde.css">
-  <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/poole-overrides.css">
-  <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/hyde-overrides.css">
-  <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/hyde-x.css">
-  {{ if isset .Site.Params "highlight" }}<link rel="stylesheet" href="{{ .Site.BaseURL }}/css/highlight/{{ .Site.Params.highlight }}.css">{{ end }}
+  <link rel="stylesheet" href="{{ "/css/poole.css" | absURL }}">
+  <link rel="stylesheet" href="{{ "/css/hyde.css" | absURL }}">
+  <link rel="stylesheet" href="{{ "/css/poole-overrides.css" | absURL }}">
+  <link rel="stylesheet" href="{{ "/css/hyde-overrides.css" | absURL }}">
+  <link rel="stylesheet" href="{{ "/css/hyde-x.css" | absURL }}">
+  {{ if isset .Site.Params "highlight" }}<link rel="stylesheet" href="{{ "/css/highlight/" | absURL }}{{ .Site.Params.highlight }}.css">{{ end }}
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
   <!-- Icons -->
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
-  <link href="/favicon.png" rel="icon">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ "/apple-touch-icon-144-precomposed.png" | absURL }}">
+  <link href="{{ "/favicon.png" | absURL }}" rel="icon">
 
   <!-- RSS -->
   {{ $siteTitle := .Site.Title }}

@@ -1,4 +1,4 @@
-{{ if isset .Site.Params "highlight" }}<script src="{{ .Site.BaseURL }}/js/highlight.pack.js"></script>
+{{ if isset .Site.Params "highlight" }}<script src="{{ "/js/highlight.pack.js" | absURL }}"></script>
 <script>hljs.initHighlightingOnLoad();</script>{{ end }}
 {{ with .Site.Params.googleAnalytics }}
 <script>

@@ -10,8 +10,7 @@
       <span class="post-date">{{ .Date.Format "Jan 2, 2006" }} &middot; {{ .ReadingTime }} minute read{{ if .Site.DisqusShortname }} &middot; <a href="{{ .Permalink }}#disqus_thread">Comments</a>{{ end }}
       {{ if isset .Params "categories" }}
       <br/>
-      {{ $baseUrl := .Site.BaseURL }}
-      {{ range .Params.categories }}<a class="label" href="{{ $baseUrl }}/categories/{{ . | urlize }}">{{ . }}</a>{{ end }}
+      {{ range .Params.categories }}<a class="label" href="{{ "/categories/" | absURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}
       {{ end }}</span>
       <p>{{ .Description }}</p>
       <a href="{{ .Permalink }}">Read On &rarr;</a>
