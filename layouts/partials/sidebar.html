@@ -9,7 +9,7 @@
     <ul class="sidebar-nav">
       <li class="sidebar-nav-item"><a href="{{ "/" | absURL }}">Blog</a></li>
       {{ range .Site.Menus.main }}
-      <li class="sidebar-nav-item"><a href="{{ .URL }}">{{ .Name }}</a></li>
+      <li class="sidebar-nav-item"><a href="{{ .URL | absURL }}">{{ .Name }}</a></li>
       {{end}}
     </ul>
 

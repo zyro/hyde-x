@@ -46,7 +46,7 @@ Just run `hugo --theme=hyde-x` to generate your site!
 An example of what your site's `config.toml` could look like. All theme-specific parameters are under `[params]` and standard Hugo parameters are used where possible.
 
 ``` toml
-baseurl = "http://example.com"
+baseurl = "http://example.com/"
 title = "Your site title"
 languageCode = "en-us"
 disqusShortname = "your_disqus_shortname" # Optional, enable Disqus integration
