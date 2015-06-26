@@ -12,8 +12,12 @@
       <br/>
       {{ range .Params.categories }}<a class="label" href="{{ "/categories/" | absURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}
       {{ end }}</span>
+      {{ if eq .Site.Params.truncate false }}
+      {{ .Content }}
+      {{ else }}
       <p>{{ .Description }}</p>
       <a href="{{ .Permalink }}">Read On &rarr;</a>
+      {{ end }}
     </div>
     {{ end }}
     {{ template "_internal/pagination.html" . }}

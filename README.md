@@ -70,6 +70,11 @@ paginate = 10
 # All parameters below here are optional and can be mixed and matched.
 #
 [params]
+    # If false display full article contents in blog index.
+    # Otherwise show description and 'read on' link to individual blog post page.
+    # Default (if ommitted) is true.
+    truncate = true
+
     # Used when a given page doesn't set its own.
     defaultDescription = "Your default page description"
     defaultKeywords = "your,default,page,keywords"
