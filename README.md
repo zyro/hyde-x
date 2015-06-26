@@ -82,7 +82,7 @@ paginate = 10
     # Changes sidebar background and link/accent colours.
     # See below for more colour options.
     # This also works: "theme-base-08 layout-reverse", or just "layout-reverse".
-	theme = "theme-base-08"
+    theme = "theme-base-08"
 
     # Select a syntax highight.
     # Check the static/css/highlight directory for options.
@@ -90,10 +90,10 @@ paginate = 10
 
     # Displays under the author name in the sidebar, keep it short.
     # You can use markdown here.
-	tagline = "Your favourite quote or soundbite."
+    tagline = "Your favourite quote or soundbite."
 
     # Metadata used to drive integrations.
-	googleAuthorship = "Your Google+ profile ID"
+    googleAuthorship = "Your Google+ profile ID"
     googleAnalytics = "Your Google Analytics tracking code"
     gravatarHash = "MD5 hash of your Gravatar email address"
 
@@ -121,6 +121,7 @@ Hyde-X provides 8 built-in colour themes by default, with the option to define m
 * Change the favicon by providing your own as `static/favicon.png` in your site directory.
 * Hugo makes it easy to override theme layout and behaviour, read about it [here](http://gohugo.io/themes/customizing).
 * Pagination is set to 10 items by default, change it by updating `paginate = 10` in your `config.toml`.
+* Set `truncate = false` in the `[params]` section of your `config.toml` to display full blog post contents in the index page, like the [base Hyde theme](https://github.com/poole/hyde) did.
 
 ### Changes and enhancements from the original theme
 
