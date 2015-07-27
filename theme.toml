@@ -5,7 +5,7 @@ description = "An elegant open source and mobile first theme, extended with new 
 homepage = "https://github.com/zyro/hyde-x"
 tags = ["blog", "technical", "personal"]
 features = ["blog", "technical", "personal"]
-min_version=0.13
+min_version=0.14
 
 [author]
     name = "Andrei Mihu"
