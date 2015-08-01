@@ -62,7 +62,7 @@ paginate = 10
     # The format shown here is the same one Jekyll/Octopress uses by default.
     post = "/blog/:year/:month/:day/:title/"
 
-[indexes]
+[taxonomies]
     # Optional. Use if you want tags and lists.
     category = "categories"
 
