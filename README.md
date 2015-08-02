@@ -108,6 +108,8 @@ paginate = 10
     googleplus = ""
     facebook = ""
     twitter = ""
+    youtube = ""
+    rss = false  # switch to true to enable RSS icon link
 ```
 
 ### Built-in colour themes
