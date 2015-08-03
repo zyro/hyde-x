@@ -72,7 +72,7 @@ paginate = 10
 [params]
     # If false display full article contents in blog index.
     # Otherwise show description and 'read on' link to individual blog post page.
-    # Default (if ommitted) is true.
+    # Default (if omitted) is true.
     truncate = true
 
     # Used when a given page doesn't set its own.
@@ -92,6 +92,10 @@ paginate = 10
     # You can use markdown here.
     tagline = "Your favourite quote or soundbite."
 
+    # Text for the top menu link, which goes the root URL for the site.
+    # Default (if omitted) is "Blog".
+    home = "Blog"
+
     # Metadata used to drive integrations.
     googleAuthorship = "Your Google+ profile ID"
     googleAnalytics = "Your Google Analytics tracking code"
@@ -104,6 +108,8 @@ paginate = 10
     googleplus = ""
     facebook = ""
     twitter = ""
+    youtube = ""
+    rss = false  # switch to true to enable RSS icon link
 ```
 
 ### Built-in colour themes
