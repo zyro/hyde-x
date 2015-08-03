@@ -109,8 +109,10 @@ paginate = 10
     facebook = ""
     twitter = ""
     youtube = ""
+
+    # Other social-like sidebar links
     rss = false  # switch to true to enable RSS icon link
-    flattr = ""
+    flattr = ""  # populate with your flattr uid
 ```
 
 ### Built-in colour themes
