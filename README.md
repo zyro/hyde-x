@@ -110,6 +110,7 @@ paginate = 10
     twitter = ""
     youtube = ""
     rss = false  # switch to true to enable RSS icon link
+    flattr = ""
 ```
 
 ### Built-in colour themes
