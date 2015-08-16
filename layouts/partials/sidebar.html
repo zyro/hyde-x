@@ -26,6 +26,21 @@
       </li>
     </ul>
 
+    {{ if isset .Site.Params "flattr" }}
+    <p><script id='flattr'>
+      (function(id){
+        var s = document.getElementById(id);
+        var f = document.createElement('iframe');
+        f.src = '//api.flattr.com/button/view/?uid={{ .Site.Params.flattr }}&button=compact&url={{ "/" | absURL }}&title={{ .Site.Title }}';
+        f.title = 'Flattr';
+        f.height = 20;
+        f.width = 110;
+        f.style.borderWidth = 0;
+        s.parentNode.insertBefore(f, s);
+      })('flattr');
+    </script></p>
+    {{ end }}
+
     <p>Copyright &copy; {{ .Now.Format "2006" }} <a href="{{ "/license/" | absURL }}">License</a><br/>
        Powered by <a href="http://gohugo.io">Hugo</a> and <a href="https://github.com/zyro/hyde-x">Hyde-X</a></p>
   </div>
