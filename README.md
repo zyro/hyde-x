@@ -113,6 +113,12 @@ paginate = 10
     # Other social-like sidebar links
     rss = false  # switch to true to enable RSS icon link
     flattr = ""  # populate with your flattr uid
+
+    # These optional settings allow deeper customization of the template
+    # You should only define and set values in this array if you want to
+    # completely replace the related default values
+    [params.overrides]
+        sidebarname = ""  # setting this would blank out the sidebar name
 ```
 
 ### Built-in colour themes
