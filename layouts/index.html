@@ -8,9 +8,9 @@
         <a href="{{ .Permalink }}">{{ .Title }}</a>
       </h1>
       <span class="post-date">By {{ .Params.author }} &middot; {{ .Date.Format "Jan 2, 2006" }} &middot; {{ .ReadingTime }} minute read{{ if .Site.DisqusShortname }} &middot; <a href="{{ .Permalink }}#disqus_thread">Comments</a>{{ end }}
-      {{ if isset .Params "categories" }}
+      {{ if isset .Params "tags" }}
       <br/>
-      {{ range .Params.categories }}<a class="label" href="{{ "/categories/" | absURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}
+      {{ range .Params.tags }}<a class="label" href="{{ "/tags/" | absURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}
       {{ end }}</span>
       {{ if eq .Site.Params.truncate false }}
       {{ .Content }}

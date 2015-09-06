@@ -3,9 +3,9 @@
   <ul class="posts">
   {{ range .Data.Pages }}
     <li><a href="{{ .Permalink }}">{{ .Title }}</a>
-    {{ if isset .Params "categories" }}
+    {{ if isset .Params "tags" }}
     &middot;
-    {{ range .Params.categories }}<a class="label" href="{{ "/categories/" | absURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}
+    {{ range .Params.tags }}<a class="label" href="{{ "/tags/" | absURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}
     {{ end }}</span>
     &middot; <time>{{ .Date.Format "Jan 2, 2006" }}</time></li>
   {{ end }}
