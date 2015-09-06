@@ -7,7 +7,12 @@
   <!-- Enable responsiveness on mobile devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-  <title>{{ .Title }} &middot; {{ .Site.Author.name }}</title>
+  <title>
+    {{ .Title }}
+    {{ if isset .Site.Author "name" }}
+      &middot; {{ .Site.Author.name }}
+    {{ end}}
+  </title>
 
   <!-- CSS -->
   <link rel="stylesheet" href="{{ "/css/poole.css" | absURL }}">
