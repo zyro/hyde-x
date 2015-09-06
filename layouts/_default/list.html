@@ -4,6 +4,7 @@
   {{ range .Data.Pages }}
     <li><a href="{{ .Permalink }}">{{ .Title }}</a>
     {{ if isset .Params "tags" }}
+    &middot; {{ .Params.author }}
     &middot;
     {{ range .Params.tags }}<a class="label" href="{{ "/tags/" | absURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}
     {{ end }}</span>
