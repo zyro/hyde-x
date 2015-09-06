@@ -13,6 +13,14 @@
       {{end}}
     </ul>
 
+    <p>Recent Posts</p>
+    <ul>
+      {{ range first 5 .Site.Pages }}
+      {{if eq .Type "post" }}
+        <li class="sidebar-nav-item"><a href="{{ .RelPermalink }}">{{ .Title }}</a>, {{ .Date.Format "01-02-2006" }}</li>
+      {{ end }}
+      {{ end }}
+    </ul>
   </div>
   <div class="container sidebar-sticky">
     <ul class="sidebar-nav">
