@@ -5,21 +5,11 @@
       <h1>{{ .Site.Author.name }}</h1>
       {{ with .Site.Params.tagline }}<p class="lead">{{ . | markdownify }}</p>{{ end }}
     </div>
-
     <ul class="sidebar-nav">
       <li class="sidebar-nav-item"><a href="{{ "/" | absURL }}">{{ if isset .Site.Params "home"}}Home{{ else }}Blog{{ end }}</a></li>
       {{ range .Site.Menus.main }}
       <li class="sidebar-nav-item"><a href="{{ .URL | absURL }}">{{ .Name }}</a></li>
       {{end}}
-    </ul>
-
-    <p>Recent Posts</p>
-    <ul>
-      {{ range first 5 .Site.Pages }}
-      {{if eq .Type "post" }}
-        <li class="sidebar-nav-item"><a href="{{ .RelPermalink }}">{{ .Title }}</a>, {{ .Date.Format "01-02-2006" }}</li>
-      {{ end }}
-      {{ end }}
     </ul>
   </div>
   <div class="container sidebar-sticky">
