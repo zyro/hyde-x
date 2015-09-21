@@ -7,10 +7,10 @@
       <h1 class="post-title">
         <a href="{{ .Permalink }}">{{ .Title }}</a>
       </h1>
-      <span class="post-date">{{ .Date.Format "Jan 2, 2006" }} &middot; {{ .ReadingTime }} minute read{{ if .Site.DisqusShortname }} &middot; <a href="{{ .Permalink }}#disqus_thread">Comments</a>{{ end }}
-      {{ if isset .Params "categories" }}
+      <span class="post-date">By <a class="author-label" href="{{ "/author/" | absURL }}{{ .Params.author | urlize }}">{{ .Params.author }}</a> &middot; {{ .Date.Format "Jan 2, 2006" }} &middot; {{ .ReadingTime }} minute read{{ if .Site.DisqusShortname }} &middot; <a href="{{ .Permalink }}#disqus_thread">Comments</a>{{ end }}
+      {{ if isset .Params "tags" }}
       <br/>
-      {{ range .Params.categories }}<a class="label" href="{{ "/categories/" | absURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}
+      {{ range .Params.tags }}<a class="label" href="{{ "/tags/" | absURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}
       {{ end }}</span>
       {{ if eq .Site.Params.truncate false }}
       {{ .Content }}

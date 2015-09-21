@@ -1,6 +1,6 @@
 +++
 title = ""
+author = ""
 description = ""
-keywords = []
-categories = []
+tags = []
 +++

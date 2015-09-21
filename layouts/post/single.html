@@ -2,10 +2,17 @@
 <div class="content container">
   <div class="post">
     <h1>{{ .Title }}</h1>
-    <span class="post-date">{{ .Date.Format "Jan 2, 2006" }} &middot; {{ .ReadingTime }} minute read{{ if .Site.DisqusShortname }} &middot; <a href="{{ .Permalink }}#disqus_thread">Comments</a>{{ end }}
-    {{ if isset .Params "categories" }}
+    <span class="post-date">
+        {{ if isset .Params "author" }}
+            By <a class="author-label" href="{{ "/author/" | absURL }}{{ .Params.author | urlize }}">{{ .Params.author }}</a> &middot;
+        {{ end }}
+        {{ .Date.Format "Jan 2, 2006" }} &middot; {{ .ReadingTime }} minute read
+        {{ if .Site.DisqusShortname }}
+            &middot; <a href="{{ .Permalink }}#disqus_thread">Comments</a>
+        {{ end }}
+    {{ if isset .Params "tags" }}
     <br/>
-    {{ range .Params.categories }}<a class="label" href="{{ "/categories/" | absURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}
+    {{ range .Params.tags }}<a class="label" href="{{ "/tags/" | absURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}
     {{ end }}</span>
     {{ .Content }}
   </div>
