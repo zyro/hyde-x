@@ -96,6 +96,9 @@ paginate = 10
     # Default (if omitted) is "Blog".
     home = "Blog"
 
+    # Changes the default copyright to your own.
+    copyright = ""
+
     # Metadata used to drive integrations.
     googleAuthorship = "Your Google+ profile ID"
     googleAnalytics = "Your Google Analytics tracking code"
