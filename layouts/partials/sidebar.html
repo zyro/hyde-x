@@ -29,8 +29,8 @@
     {{ if isset .Site.Params "flattr" }}
     <p><script id='flattr'>
       (function(id){
-        var s = document.getElementById(id);
-        var f = document.createElement('iframe');
+        var f, s = document.getElementById(id);
+        f = document.createElement('iframe');
         f.src = '//api.flattr.com/button/view/?uid={{ .Site.Params.flattr }}&button=compact&url={{ "/" | absURL }}&title={{ .Site.Title }}';
         f.title = 'Flattr';
         f.height = 20;
