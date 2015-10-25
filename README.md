@@ -104,6 +104,7 @@ paginate = 10
     # Sidebar social links, these must be full URLs.
     github = ""
     bitbucket = ""
+    stackOverflow = ""
     linkedin = ""
     googleplus = ""
     facebook = ""
