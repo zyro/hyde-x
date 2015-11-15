@@ -26,7 +26,7 @@
       {{ with .Site.Params.facebook }}<a href="{{ . }}"><i class="fa fa-facebook-square fa-3x"></i></a>{{ end }}
       {{ with .Site.Params.twitter }}<a href="{{ . }}"><i class="fa fa-twitter-square fa-3x"></i></a>{{ end }}
       {{ with .Site.Params.youtube }}<a href="{{ . }}"><i class="fa fa-youtube-square fa-3x"></i></a>{{ end }}
-      {{ if .Site.Params.rss }}<a href="{{ .RSSlink }}" type="application/rss+xml"><i class="fa fa-rss-square fa-3x"></i></a>{{ end }}
+      {{ if .Site.Params.rss }}<a href="/index.xml" type="application/rss+xml"><i class="fa fa-rss-square fa-3x"></i></a>{{ end }}
       </li>
     </ul>
 
