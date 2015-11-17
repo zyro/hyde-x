@@ -88,6 +88,9 @@ paginate = 10
     # Check the static/css/highlight directory for options.
     highlight = "sunburst"
 
+    # Optional additional custom CSS file URL, will override other styles
+    customCSS = ""
+
     # Displays under the author name in the sidebar, keep it short.
     # You can use markdown here.
     tagline = "Your favourite quote or soundbite."
