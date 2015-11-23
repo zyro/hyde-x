@@ -79,6 +79,10 @@ paginate = 10
     defaultDescription = "Your default page description"
     defaultKeywords = "your,default,page,keywords"
 
+    # Show estimated reading time for posts.
+    # Default (if omitted) is false.
+    hideReadingTime = false
+
     # Changes sidebar background and link/accent colours.
     # See below for more colour options.
     # This also works: "theme-base-08 layout-reverse", or just "layout-reverse".
@@ -88,7 +92,7 @@ paginate = 10
     # Check the static/css/highlight directory for options.
     highlight = "sunburst"
 
-    # Optional additional custom CSS file URL, will override other styles
+    # Optional additional custom CSS file URL, will override other styles.
     customCSS = ""
 
     # Displays under the author name in the sidebar, keep it short.
