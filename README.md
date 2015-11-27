@@ -104,7 +104,6 @@ paginate = 10
     home = "Blog"
 
     # Metadata used to drive integrations.
-    googleAuthorship = "Your Google+ profile ID"
     googleAnalytics = "Your Google Analytics tracking code"
     gravatarHash = "MD5 hash of your Gravatar email address"
 
@@ -147,7 +146,6 @@ Hyde-X provides 8 built-in colour themes by default, with the option to define m
 * Disqus integration: comment counts listed under blog entry names in post list, comments displayed at the bottom of each post.
 * Gravatar image in sidebar.
 * Google Analytics integration.
-* Google Authorship metadata.
 * Sidebar link layout and footer format changes.
 * Blog post list now contains only the post description, not the full contents.
 * Paginated blog listing.
