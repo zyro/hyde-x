@@ -114,6 +114,10 @@ paginate = 10
     # Other social-like sidebar links
     rss = false  # switch to true to enable RSS icon link
     flattr = ""  # populate with your flattr uid
+
+    [params.social]
+      iconSize = "2x"
+      isSquaredIcon = false
 ```
 
 ### Built-in colour themes

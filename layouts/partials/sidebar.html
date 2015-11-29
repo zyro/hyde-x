@@ -18,15 +18,26 @@
 
     <ul class="sidebar-nav">
       <li class="sidebar-nav-item">
-      {{ with .Site.Params.github }}<a href="{{ . }}"><i class="fa fa-github-square fa-3x"></i></a>{{ end }}
-      {{ with .Site.Params.bitbucket }}<a href="{{ . }}"><i class="fa fa-bitbucket-square fa-3x"></i></a>{{ end }}
-      {{ with .Site.Params.stackOverflow }}<a href="{{ . }}"><i class="fa fa-stack-overflow fa-3x"></i></a>{{ end }}
-      {{ with .Site.Params.linkedin }}<a href="{{ . }}"><i class="fa fa-linkedin-square fa-3x"></i></a>{{ end }}
-      {{ with .Site.Params.googleplus }}<a href="{{ . }}"><i class="fa fa-google-plus-square fa-3x"></i></a>{{ end }}
-      {{ with .Site.Params.facebook }}<a href="{{ . }}"><i class="fa fa-facebook-square fa-3x"></i></a>{{ end }}
-      {{ with .Site.Params.twitter }}<a href="{{ . }}"><i class="fa fa-twitter-square fa-3x"></i></a>{{ end }}
-      {{ with .Site.Params.youtube }}<a href="{{ . }}"><i class="fa fa-youtube-square fa-3x"></i></a>{{ end }}
-      {{ if .Site.Params.rss }}<a href="{{ "/index.xml" | absURL }}" type="application/rss+xml"><i class="fa fa-rss-square fa-3x"></i></a>{{ end }}
+
+      {{ $.Scratch.Set "square" "-square"}}
+      {{ if not .Site.Params.social.isSquaredIcon }}
+        {{ $.Scratch.Set "square" ""}}
+      {{ end }}
+
+      {{ $.Scratch.Set "iconSize" "3x"}}
+      {{ if .Site.Params.social.iconSize }}
+        {{ $.Scratch.Set "iconSize" $.Site.Params.social.iconSize}}
+      {{ end }}
+
+      {{ with .Site.Params.github }}<a href="{{ . }}"><i class="fa fa-github{{ $.Scratch.Get "square" }} fa-{{ $.Scratch.Get "iconSize" }}"></i></a>{{ end }}
+      {{ with .Site.Params.bitbucket }}<a href="{{ . }}"><i class="fa fa-bitbucket{{ $.Scratch.Get "square" }} fa-{{ $.Scratch.Get "iconSize" }}"></i></a>{{ end }}
+      {{ with .Site.Params.stackOverflow }}<a href="{{ . }}"><i class="fa fa-stack-overflow fa-{{ $.Scratch.Get "iconSize" }}"></i></a>{{ end }}
+      {{ with .Site.Params.linkedin }}<a href="{{ . }}"><i class="fa fa-linkedin{{ $.Scratch.Get "square" }} fa-{{ $.Scratch.Get "iconSize" }}"></i></a>{{ end }}
+      {{ with .Site.Params.googleplus }}<a href="{{ . }}"><i class="fa fa-google-plus{{ $.Scratch.Get "square" }} fa-{{ $.Scratch.Get "iconSize" }}"></i></a>{{ end }}
+      {{ with .Site.Params.facebook }}<a href="{{ . }}"><i class="fa fa-facebook{{ $.Scratch.Get "square" }} fa-{{ $.Scratch.Get "iconSize" }}"></i></a>{{ end }}
+      {{ with .Site.Params.twitter }}<a href="{{ . }}"><i class="fa fa-twitter{{ $.Scratch.Get "square" }} fa-{{ $.Scratch.Get "iconSize" }}"></i></a>{{ end }}
+      {{ with .Site.Params.youtube }}<a href="{{ . }}"><i class="fa fa-youtube{{ $.Scratch.Get "square" }} fa-{{ $.Scratch.Get "iconSize" }}"></i></a>{{ end }}
+      {{ if .Site.Params.rss }}<a href="{{ .RSSlink }}" type="application/rss+xml"><i class="fa fa-rss{{ $.Scratch.Get "square" }} fa-{{ $.Scratch.Get "iconSize" }}"></i></a>{{ end }}
       </li>
     </ul>
 
