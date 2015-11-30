@@ -41,6 +41,7 @@
     ga('create', '{{ . }}', 'auto');
     ga('send', 'pageview');
   </script>
+  {{ end }}
 </head>
 <body{{ with .Site.Params.theme }} class="{{ . }}"{{ end }}>
 {{ partial "sidebar.html" . }}

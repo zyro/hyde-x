@@ -79,7 +79,7 @@ paginate = 10
     defaultDescription = "Your default page description"
     defaultKeywords = "your,default,page,keywords"
 
-    # Show estimated reading time for posts.
+    # Hide estimated reading time for posts.
     # Default (if omitted) is false.
     hideReadingTime = false
 
