@@ -8,5 +8,22 @@
   s.parentNode.insertBefore(g,s)}(document,'script'));
 </script>
 {{ end }}
+{{ if isset .Site.Params "PiwikID" }}
+{{ if isset .Site.Params "PiwikURL" }}
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="{{ .Site.Params.PiwikURL }}/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', {{ .Site.Params.PiwikID }} ]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="{{ .Site.Params.PiwikURL }}/piwik.php?idsite={{ .Site.Params.PiwikID }}" style="border:0;" alt="" /></p></noscript>
+{{ end }}
+{{ end }}
 </body>
 </html>
