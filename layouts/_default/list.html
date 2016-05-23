@@ -7,7 +7,7 @@
     &middot;
     {{ range .Params.categories }}<a class="label" href="{{ "/categories/" | absURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}
     {{ end }}</span>
-    &middot; <time>{{ .Date.Format "Jan 2, 2006" }}</time></li>
+    {{ if isset .Date }}&middot; <time>{{ .Date.Format "Jan 2, 2006" }}</time>{{ end }}</li>
   {{ end }}
   </ul>
 </div>
