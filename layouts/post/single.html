@@ -3,9 +3,18 @@
   <div class="post">
     <h1 class="post-title">{{ .Title }}</h1>
     <span class="post-date">{{ .Date.Format "Jan 2, 2006" }}{{ if not .Site.Params.hideReadingTime }} &middot; {{ .ReadingTime }} minute read{{ end }}{{ if .Site.DisqusShortname }} &middot; <a href="{{ .Permalink }}#disqus_thread">Comments</a>{{ end }}
-    {{ if isset .Params "categories" }}
+    {{ $.Scratch.Set "hasLabels" false }} 
+    {{ range $itemToLabel := .Site.Params.taxonomyItemsToLabel }} 
+    	{{ with (index $.Params $itemToLabel) }}
+	  {{ if gt (len .) 0 }} {{ $.Scratch.Set "hasLabels" true }} {{ end }} 
+	{{ end }}
+    {{ end }} 
+
+    {{ if eq ($.Scratch.Get "hasLabels") true }}
     <br/>
-    {{ range .Params.categories }}<a class="label" href="{{ "/categories/" | absURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}
+    {{ range $itemToLabel := .Site.Params.taxonomyItemsToLabel }} 
+	{{ range index $.Params $itemToLabel }}<a class="label" href="{{ (print $itemToLabel "/") | absURL }}{{ . | urlize }}">{{ . }}</a>{{ end }} 
+    	{{ end }}
     {{ end }}</span>
     {{ .Content }}
   </div>
