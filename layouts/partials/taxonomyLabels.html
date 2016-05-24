@@ -1,0 +1,13 @@
+{{ $.Scratch.Set "hasLabels" false }} 
+{{ range $itemToLabel := .Site.Params.taxonomyItemsToLabel }} 
+	{{ with (index $.Params $itemToLabel) }}
+		{{ if gt (len .) 0 }} {{ $.Scratch.Set "hasLabels" true }} {{ end }} 
+	{{ end }}
+{{ end }} 
+
+{{ if eq ($.Scratch.Get "hasLabels") true }}
+<br/>
+{{ range $itemToLabel := .Site.Params.taxonomyItemsToLabel }} 
+	{{ range index $.Params $itemToLabel }}<a class="label" href="{{ (print $itemToLabel "/") | absURL }}{{ . | urlize }}">{{ . }}</a>{{ end }} 
+	{{ end }}
+{{ end }}
