@@ -8,7 +8,7 @@
         <a href="{{ .Permalink }}">{{ .Title }}</a>
       </h1>
       <span class="post-date">{{ .Date.Format "Jan 2, 2006" }}{{ if not .Site.Params.hideReadingTime }} &middot; {{ .ReadingTime }} minute read{{ end }}{{ if .Site.DisqusShortname }} &middot; <a href="{{ .Permalink }}#disqus_thread">Comments</a>{{ end }}
-	{{ partial "taxonomyLabels.html" . }}
+	{{ partial "taxonomyLinks.html" (dict "context" . "separator" "newline") }}
       </span>
       {{ if eq .Site.Params.truncate false }}
       {{ .Content }}

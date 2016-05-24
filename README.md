@@ -103,6 +103,11 @@ paginate = 10
     # Default (if omitted) is "Blog".
     home = "Blog"
 
+    # Links will be generated for these taxonomies
+    # Use to add links for categories, tags, etc.
+    # Example: [ "categories", "tags" ]
+    taxonomyItemsToLink = [ "categories" ]
+
     # Metadata used to drive integrations.
     googleAnalytics = "Your Google Analytics tracking code"
     gravatarHash = "MD5 hash of your Gravatar email address"
