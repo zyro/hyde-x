@@ -5,7 +5,7 @@
 .sidebar-about h1 {
   color: #fff;
   margin-top: 0;
-  font-family: "Abril Fatface", serif;
+  font-family: 'Quattrocento', serif;
   font-size: 2.5rem;
 }
 
@@ -13,4 +13,74 @@
   padding-left: 0;
   list-style: none;
   margin-bottom: 1rem;
+}
+
+.sidebar-sticky {
+  font-size: 0.8rem;
+}
+
+.sidebar {
+  background-color: #51121E;
+}
+
+html {
+  font-family: 'Quattrocento Sans', sans-serif;
+}
+
+p.clip-attribute {
+  text-align: right;
+  font-size: 0.8rem;
+}
+
+/* From http://askthecssguy.com/articles/showing-hyperlink-cues-with-css/ */
+
+/* all A tags whose HREF attribute ends in .pdf */
+a[href$='.pdf'] { 
+	padding-left: 18px;
+	background: transparent url(/new/icons/icon_pdf.gif) no-repeat center left;
+}
+
+/* all A tags whose REL attribute equals pdf */
+a[rel='pdf'] { 
+	padding-left: 18px;
+	background: transparent url(/new/icons/icon_pdf.gif) no-repeat center left;
+}
+
+/*  all A tags whose REL attributes has the letters pdf somewhere mixed in*/
+a[rel*='pdf'] { 
+	padding-left: 18px;
+	background: transparent url(/new/icons/icon_pdf.gif) no-repeat center left;
+}
+
+/* all A tags whose REL attribute contains the value pdf, seperated from other values with a space */
+a[rel~='pdf'] { 
+	padding-left: 18px;
+	background: transparent url(/new/icons/icon_pdf.gif) no-repeat center left;
+}
+
+/* all A tags whose HREF attribute starts with mailto: */
+a[href ^="mailto:"] {
+	padding-left: 18px;
+    background: transparent url(/new/icons/icon_mailto.gif) no-repeat center left;
+   
+}
+
+/* all A tags whose CLASS attribute is popup */
+a[class ="popup"] {
+	padding-left: 18px;
+    background: transparent url(/new/icons/icon_popup.gif) no-repeat center left;
+}
+
+
+a[href$='.doc'] { 
+	padding-left: 18px;
+	background: transparent url(/new/icons/icon_doc.gif) no-repeat center left;
+}
+a[href$='.xls'] { 
+	padding-left: 18px;
+	background: transparent url(/new/icons/icon_xls.gif) no-repeat center left;
+}
+a[rel ~='external'] {
+	padding-left: 18px;
+	background: transparent url(/new/icons/icon_external.gif) no-repeat center left;
 }

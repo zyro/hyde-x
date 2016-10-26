@@ -1,7 +1,16 @@
 {{ partial "head.html" . }}
 <div class="content container">
+{{ if isset .Site.Params "hometag" }}
+  {{ range .Data.Pages }}
+    {{ if in .Params.tags .Site.Params.hometag }}
+      <h1>{{ .Title }}</h1>
+      {{ .Content }}
+    {{ end }}
+  {{ end }}
+{{ else }}
   <div class="posts">
-    {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
+    {{ $homesection := (or .Site.Params.homesection "post") }}
+    {{ $paginator := .Paginate (where .Data.Pages "Type" $homesection) }}
     {{ range $paginator.Pages }}
     <div class="post">
       <h1 class="post-title">
@@ -19,6 +28,7 @@
     {{ end }}
     {{ template "_internal/pagination.html" . }}
   </div>
+{{ end }}
 </div>
 
 {{ with .Site.DisqusShortname }}
