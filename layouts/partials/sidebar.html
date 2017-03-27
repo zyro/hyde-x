@@ -1,7 +1,7 @@
 <div class="sidebar">
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
-      {{ if isset .Site.Params "gravatarHash" }}
+      {{ if isset .Site.Params "gravatarhash" }}
         <img src="https://www.gravatar.com/avatar/{{ .Site.Params.gravatarHash }}?s=200"
              alt="gravatar" title="{{ .Site.Author.name }}">
       {{ end }}
