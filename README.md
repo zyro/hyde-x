@@ -103,6 +103,9 @@ paginate = 10
     # Default (if omitted) is "Blog".
     home = "Blog"
 
+    # Changes the default copyright to your own.
+    copyright = ""
+
     # Metadata used to drive integrations.
     googleAnalytics = "Your Google Analytics tracking code"
     gravatarHash = "MD5 hash of your Gravatar email address"
