@@ -14,3 +14,12 @@
   list-style: none;
   margin-bottom: 1rem;
 }
+
+@media (min-width: 48em) {
+    .sidebar-sticky {
+        top:  1rem;
+        overflow-y: auto;
+        overflow-x: hidden;
+        height: 100%;
+    }
+}
