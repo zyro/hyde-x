@@ -286,6 +286,37 @@ a.label:focus {
   border-color: #ddd;
 }
 
+* Black */
+.theme-base-07 .label {
+  background-color: #404040;
+}
+
+.theme-base-0d .pagination > li > a,
+.theme-base-0d .pagination > li > span {
+  color: #404040;
+}
+
+.theme-base-0d .pagination > .active > a,
+.theme-base-0d .pagination > .active > span,
+.theme-base-0d .pagination > .active > a:hover,
+.theme-base-0d .pagination > .active > span:hover,
+.theme-base-0d .pagination > .active > a:focus,
+.theme-base-0d .pagination > .active > span:focus {
+  background-color: #404040;
+  border-color: #404040;
+}
+
+.theme-base-0d .pagination > .disabled > span,
+.theme-base-0d .pagination > .disabled > span:hover,
+.theme-base-0d .pagination > .disabled > span:focus,
+.theme-base-0d .pagination > .disabled > a,
+.theme-base-0d .pagination > .disabled > a:hover,
+.theme-base-0d .pagination > .disabled > a:focus {
+  color: #777;
+  background-color: #fff;
+  border-color: #ddd;
+}
+
 /* Blue */
 .theme-base-0d .label {
   background-color: #6a9fb5;
