@@ -116,6 +116,7 @@ paginate = 10
     facebook = ""
     twitter = ""
     youtube = ""
+    email = ""
 
     # Other social-like sidebar links
     rss = false  # switch to true to enable RSS icon link
