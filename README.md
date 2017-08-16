@@ -1,9 +1,9 @@
-Hyde-X
+rehyde-x
 ======
 
 Enhanced port of the Jekyll "[Hyde](https://github.com/poole/hyde)" theme to the [Hugo](http://gohugo.io) site generator. Check below for a list of enhancements.
 
-You can find a live site using this theme [here](http://andreimihu.com) and the corresponding source code [here](https://github.com/zyro/andreimihu.com).
+You can find a live site using this theme [here](http://hashbang0.com)<!--- and the corresponding source code [here](https://github.com/zyro/andreimihu.com)--->.
 
 * [Installation](#installation)
 * [Usage](#usage)
@@ -21,7 +21,7 @@ You can find a live site using this theme [here](http://andreimihu.com) and the 
 $ cd your_site_repo/
 $ mkdir themes
 $ cd themes
-$ git clone https://github.com/zyro/hyde-x
+$ git clone https://github.com/forquare/rehyde-x
 ```
 
 See the [official Hugo themes documentation](http://gohugo.io/themes/installing) for more info.
@@ -39,7 +39,7 @@ This theme expects a relatively standard Hugo blog/personal site layout:
     └── other_page.md
 ```
 
-Just run `hugo --theme=hyde-x` to generate your site!
+Just run `hugo --theme=rehyde-x` to generate your site!
 
 ### Configuration
 
@@ -51,7 +51,7 @@ title = "Your site title"
 languageCode = "en-us"
 disqusShortname = "your_disqus_shortname" # Optional, enable Disqus integration
 MetaDataFormat = "toml"
-theme = "hyde-x"
+theme = "rehyde-x"
 paginate = 10
 
 [author]
@@ -130,13 +130,13 @@ paginate = 10
 
 ### Built-in colour themes
 
-Hyde-X provides 8 built-in colour themes by default, with the option to define more in your own custom CSS.
+rehyde-x provides 8 built-in colour themes by default, with the option to define more in your own custom CSS.
 
-![Hyde-X theme classes](https://github.com/zyro/hyde-x/blob/master/images/theme-colours.png)
+![rehyde-x theme classes](https://github.com/forquare/rehyde-x/blob/master/images/theme-colours.png)
 
 ### Tips
 
-* If you've added `theme = "hyde-x"` to your `config.toml`, you don't need to keep using the `--theme=hyde-x` flag!
+* If you've added `theme = "rehyde-x"` to your `config.toml`, you don't need to keep using the `--theme=rehyde-x` flag!
 * Pages where you specify `menu = "main"` in the front matter will be linked in the sidebar just below the `Blog` link.
 * Use the exact permalink format above to maintain old links if migrating from Jekyll/Octopress.
 * Although all of the syntax highlight CSS files under the theme's `static/css/highlight` are bundled with the site, only the one you choose will be included in the page and delivered to the browser.
@@ -162,10 +162,12 @@ Hyde-X provides 8 built-in colour themes by default, with the option to define m
 
 Obviously largely a port of the awesome [Hyde](https://github.com/poole/hyde) theme.
 
+Many thanks to [Andrei Mihu](https://github.com/zyro) for the original port of [hyde-x](https://github.com/zyro/hyde-x) from which this project is forked.
+
 ### Questions, ideas, bugs, pull requests?
 
-All feedback is welcome! Head over to the [issue tracker](https://github.com/zyro/hyde-x/issues).
+All feedback is welcome! Head over to the [issue tracker](https://github.com/forquare/rehyde-x/issues).
 
 ### License
 
-Open sourced under the [MIT license](https://github.com/zyro/hyde-x/blob/master/LICENSE).
+Open sourced under the [MIT license](https://github.com/forquare/rehyde-x/blob/master/LICENSE).
