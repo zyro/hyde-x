@@ -3,7 +3,7 @@ rehyde-x
 
 Enhanced port of the Jekyll "[Hyde](https://github.com/poole/hyde)" theme to the [Hugo](http://gohugo.io) site generator. Check below for a list of enhancements.
 
-You can find a live site using this theme [here](http://hashbang0.com)<!--- and the corresponding source code [here](https://github.com/zyro/andreimihu.com)--->.
+You can find a live site using this theme [here](http://hashbang0.com) and the corresponding source code [here](https://github.com/forquare/hashbang0.com).
 
 * [Installation](#installation)
 * [Usage](#usage)
