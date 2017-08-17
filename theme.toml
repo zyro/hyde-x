@@ -1,18 +1,19 @@
-name = "Hyde-X"
+name = "rehyde-x"
 license = "MIT"
-licenselink = "https://github.com/zyro/hyde-x/LICENSE"
+licenselink = "https://github.com/forquare/rehyde-x/LICENSE"
 description = "An elegant open source and mobile first theme, extended with new integrations and layout improvements"
-homepage = "https://github.com/zyro/hyde-x"
+homepage = "https://github.com/forquare/rehyde-x"
 tags = ["blog", "technical", "personal"]
 features = ["blog", "technical", "personal"]
 min_version = 0.14
 
 [author]
-    name = "Andrei Mihu"
-    homepage = "http://andreimihu.com"
+    name = "Ben Lavery-Griffiths"
+    homepage = "http://hashbang0.com"
+    repo = "https://github.com/forquare/rehyde-x"
 
 # If Porting existing theme
 [original]
-    author =  "poole"
-    homepage = "http://hyde.getpoole.com"
-    repo = "https://github.com/poole/hyde"
+    name = "Andrei Mihu"
+    homepage = "http://andreimihu.com"
+    repo = "https://github.com/zyro/hyde-x"

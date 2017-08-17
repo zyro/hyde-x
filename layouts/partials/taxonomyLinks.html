@@ -1,0 +1,15 @@
+{{ $.context.Scratch.Set "hasTaxonomyLinks" false }} 
+{{ range $itemToLink := $.context.Site.Params.taxonomyItemsToLink }} 
+	{{ with (index $.context.Params $itemToLink) }}
+		{{ if gt (len .) 0 }} {{ $.context.Scratch.Set "hasTaxonomyLinks" true }} {{ end }} 
+	{{ end }}
+{{ end }} 
+
+{{ if eq ($.context.Scratch.Get "hasTaxonomyLinks") true }}
+	{{ if eq $.separator "newline" }}<br/>
+	{{ else if eq $.separator "middot" }}&middot;
+	{{ end }}
+	{{ range $itemToLink := $.context.Site.Params.taxonomyItemsToLink }} 
+		{{ range index $.context.Params $itemToLink }}<a class="label" href="{{ (print $itemToLink "/") | absURL }}{{ . | urlize }}">{{ . }}</a>{{ end }} 
+	{{ end }}
+{{ end }}
