@@ -2,7 +2,7 @@
 <div class="content container">
   <ul class="posts">
   {{ range .Data.Pages }}
-    <li><a href="{{ .Permalink }}">{{ .Title }}</a>
+    <li><a href="{{ .Permalink }}">Numeric Grades</a>
     {{ if isset .Params "categories" }}
     &middot;
     {{ range .Params.categories }}<a class="label" href="{{ "/categories/" | absURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}
