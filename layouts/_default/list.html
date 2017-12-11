@@ -2,12 +2,12 @@
 <div class="content container">
   <ul class="posts">
   {{ range .Data.Pages }}
-    <li><a href="{{ .Permalink }}">{{ .Title }}</a>
+    <li><a href="{{ .Permalink }}">Numeric Grades</a>
     {{ if isset .Params "categories" }}
     &middot;
     {{ range .Params.categories }}<a class="label" href="{{ "/categories/" | absURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}
     {{ end }}</span>
-    &middot; <time>{{ .Date.Format "Jan 2, 2006" }}</time></li>
+    {{ if not .Date.IsZero }}&middot; <time>{{ .Date.Format "Jan 2, 2006" }}</time>{{ end }}</li>
   {{ end }}
   </ul>
 </div>

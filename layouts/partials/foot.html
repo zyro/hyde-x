@@ -1,3 +1,9 @@
+<div class="content container">
+  <p>
+  Copyright &copy; {{ .Now.Format "2006" }} <a href="{{ "/license/" | absURL }}">License</a><br/>
+  Wesbite powered by <a href="http://gohugo.io">Hugo</a>
+  </p>
+</div>
 {{ if isset .Site.Params "highlight" }}<script src="{{ "/js/highlight.pack.js" | absURL }}"></script>
 <script>hljs.initHighlightingOnLoad();</script>{{ end }}
 </body>
