@@ -15,7 +15,7 @@
       {{ if eq .Site.Params.truncate false }}
       {{ .Content }}
       {{ else if .Description }}
-      <p>{{ .Description }}</p>
+      <p>{{ .Description | markdownify}}</p>
       <a href="{{ .Permalink }}">Read On &rarr;</a>
       {{ else }}
       {{ .Summary }}
