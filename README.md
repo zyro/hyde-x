@@ -93,7 +93,12 @@ paginate = 10
     highlight = "sunburst"
 
     # Optional additional custom CSS file URL, will override other styles.
-    customCSS = ""
+    customCSS = "
+    
+    # Displays the author's picture (or any other image at 200x200)
+    # Gravatar will only be used if profilepic is not set
+    profilepic = ""
+    gravatarHash = "MD5 hash of your Gravatar email address"
 
     # Displays under the author name in the sidebar, keep it short.
     # You can use markdown here.
@@ -105,7 +110,6 @@ paginate = 10
 
     # Metadata used to drive integrations.
     googleAnalytics = "Your Google Analytics tracking code"
-    gravatarHash = "MD5 hash of your Gravatar email address"
 
     # Sidebar social links, these must be full URLs.
     github = ""
