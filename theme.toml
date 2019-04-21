@@ -1,15 +1,15 @@
 name = "Hyde-X"
 license = "MIT"
-licenselink = "https://github.com/zyro/hyde-x/LICENSE"
+licenselink = "https://github.com/fike/hyde-x/LICENSE"
 description = "An elegant open source and mobile first theme, extended with new integrations and layout improvements"
-homepage = "https://github.com/zyro/hyde-x"
+homepage = "https://github.com/fike/hyde-x"
 tags = ["blog", "technical", "personal"]
 features = ["blog", "technical", "personal"]
 min_version = 0.14
 
 [author]
-    name = "Andrei Mihu"
-    homepage = "http://andreimihu.com"
+    name = "Fernando Ike"
+    homepage = "http://www.fernandoike.com"
 
 # If Porting existing theme
 [original]
